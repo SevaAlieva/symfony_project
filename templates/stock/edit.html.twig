@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Stock{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+        <h1 class="mb-4">Edit Stock</h1>
+
+        <div class="card shadow-sm">
+            <div class="card-body">
+                {{ include('stock/_form.html.twig', {'button_label': 'Update'}) }}
+            </div>
+        </div>
+
+        <div class="mt-3">
+            <a href="{{ path('app_stock_index') }}" class="btn btn-outline-secondary">
+                <i class="fas fa-arrow-left"></i> Back to list
+            </a>
+        </div>
+
+        {{ include('stock/_delete_form.html.twig') }}
+    </div>
+{% endblock %}
