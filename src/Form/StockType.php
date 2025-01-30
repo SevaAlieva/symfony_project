@@ -13,6 +13,7 @@ class StockType extends AbstractType
     {
         $builder
             ->add('name')
+            ->add('ticker')
         ;
     }
 
