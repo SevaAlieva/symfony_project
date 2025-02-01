@@ -1,5 +1,3 @@
-{# templates/application/create.html.twig #}
-
 {% extends 'base.html.twig' %}
 
 {% block title %}Create Application{% endblock %}
@@ -14,6 +12,7 @@
     {{ form_row(form.status) }}
     {{ form_row(form.user) }}
     {{ form_row(form.stock) }}
+    {{ form_row(form.portfolio) }} <!-- Добавляем поле для Portfolio -->
     <button type="submit">Submit</button>
     {{ form_end(form) }}
 {% endblock %}
